@@ -96,6 +96,9 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.menu-item .link {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -245,15 +248,21 @@ button {
 }
 
 .portfolio-item {
-  border: 1px solid var(--frame-color);
   width: calc((100% - 48px) / 3);
+}
+
+.portfolio-card-text {
+  text-align: center;
+  padding: 32px 16px;
+  border: 1px solid var(--frame-color);
+  border-top: none;
 }
 
 .filter-menu {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .filter-button {
