@@ -29,6 +29,7 @@ ul {
 
 img {
   display: block;
+  width: 100%;
 }
 
 .list {
@@ -109,6 +110,11 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+
+.contact-data {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .address-data {
