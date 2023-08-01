@@ -1,0 +1,162 @@
+:root {
+  --primary-dark-color: #2E2F42;
+  --primary-text-color: #434455;
+  --primary-background-color: #FFFFFF;
+  --primary-brand-color: #4D5AE5;
+  --pressed-button-color: #404BBF;
+  --frame-color: #E7E9FC;
+  --secondary-light-color: #F4F4FD;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary-dark-color);
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.hero-header {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.section-header {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary-dark-color);
+}
+
+.block-header,
+.portfolio-header {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-dark-color);
+}
+
+.block-descr,
+.portfolio-descr {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-descr {
+  color: var(--primary-text-color);
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+}
+
+.logo-accent {
+  color: var(--primary-dark-color);
+}
+
+.menu-item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.list .link:hover,
+.list .link:focus,
+.list .link:active {
+  color: var(--pressed-button-color);
+}
+
+.contact-data .link {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.address-data {
+  font-style: normal;
+}
+
+.hero-screen {
+  background-color: var(--primary-dark-color);
+  color: var(--primary-background-color);
+  text-align: center;
+}
+
+.cta {
+  color: var(--primary-background-color);
+  background-color: var(--primary-brand-color);
+}
+
+.cta:hover,
+.cta:focus {
+  background-color: var(--pressed-button-color);
+}
+
+.team-section {
+  background-color: var(--secondary-light-color);
+}
+
+.team-card {
+  background-color: var(--primary-background-color);
+}
+
+
+.portfolio-item {
+  border: 1px solid var(--frame-color);
+}
+
+.filter-button {
+  color: var(--primary-brand-color);
+  background-color: var(--secondary-light-color);
+  border: 1px solid var(--frame-color);
+
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--primary-background-color);
+  background-color: var(--pressed-button-color);
+}
+
+
+.page-footer {
+  background-color: var(--primary-dark-color);
+}
+
+.page-footer .logo {
+  color: var(--primary-brand-color);
+}
+
+.footer-text,
+.footer-logo {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-light-color);
+}
