@@ -14,8 +14,26 @@ body {
   background-color: var(--primary-background-color);
 }
 
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style-type: none;
+  /* display: flex; */
 }
 
 .link {
@@ -32,10 +50,42 @@ button {
   letter-spacing: 0.04em;
 }
 
+.container {
+  max-width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-between;
+}
+
+.page-header {
+  border-bottom: 1px solid var(--frame-color);
+}
+
+.header-wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.menu-wrapper {
+  display: flex;
+  gap: 76px
+}
+
+.hero-container {
+  padding: 188px 316px;
+}
+
 .hero-header {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin-bottom: 48px;
 }
 
 .section-header {
@@ -45,6 +95,25 @@ button {
   text-align: center;
   text-transform: capitalize;
   color: var(--primary-dark-color);
+  margin-bottom: 72px;
+}
+
+.list-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.about-section-wrapper {
+  padding-top: 120px
+}
+
+.section-wrapper {
+  padding: 120px 0;
+}
+
+.card-text {
+  text-align: center;
+  padding: 32px 16px;
 }
 
 .block-header,
@@ -54,6 +123,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-dark-color);
+  margin-bottom: 8px;
 }
 
 .block-descr,
@@ -110,6 +180,7 @@ button {
 }
 
 .cta {
+  padding: 16px 32px;
   color: var(--primary-background-color);
   background-color: var(--primary-brand-color);
 }
@@ -127,16 +198,46 @@ button {
   background-color: var(--primary-background-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.portfolio-section {
+  padding-bottom: 120px;
+}
+
+.portfolio-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
 
 .portfolio-item {
   border: 1px solid var(--frame-color);
 }
 
+.filter-menu {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 96px 0 72px;
+}
+
 .filter-button {
   color: var(--primary-brand-color);
   background-color: var(--secondary-light-color);
+  padding: 12px 24px;
   border: 1px solid var(--frame-color);
-
 }
 
 .filter-button:hover,
@@ -150,6 +251,10 @@ button {
   background-color: var(--primary-dark-color);
 }
 
+.footer-container {
+  padding: 100px 0;
+}
+
 .page-footer .logo {
   color: var(--primary-brand-color);
 }
@@ -159,4 +264,9 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-light-color);
+}
+
+.footer-text {
+  width: 264px;
+  margin-top: 16px;
 }
